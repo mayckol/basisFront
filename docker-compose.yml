@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    container_name: basis_web
+    volumes:
+      - .:/app
+    working_dir: /app
+    ports:
+      - 8081:8080
+    command: [ "yarn", "serve" ]
