@@ -1,4 +1,4 @@
 export default {
-  token: localStorage.getItem('access_token') || null
+  token: localStorage.getItem("access_token") || null,
+  user: ""
 };
-
