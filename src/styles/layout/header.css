@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  padding: 0 5em;
+  font-size: 1.2rem;
+
+  background: var(--blue-dark);
+  color: var(--white);
+}
+
+.container span {
+  margin-right: 2em;
+}
+
+.container a {
+  border-radius: 4px;
+}
+
+.container a:nth-child(n + 2):hover {
+  background: var(--blue);
+}
+
+.container a:first-child {
+  flex: 1;
+}
+
+.container a:nth-child(n + 2) {
+  margin: 0 5px;
+  padding: 10px 10px;
+}
