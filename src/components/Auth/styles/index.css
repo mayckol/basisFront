@@ -1,0 +1,90 @@
+.container {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  padding: 2em;
+  -webkit-box-shadow: 2px 3px 3px 1px var(--blue);
+  -moz-box-shadow: 2px 3px 3px 1px var(--blue);;
+  box-shadow: 2px 3px 3px 1px var(--blue);
+}
+
+.container form.register {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  padding: 2em;
+  -webkit-box-shadow: 2px 3px 3px 1px var(--green-medium);
+  -moz-box-shadow: 2px 3px 3px 1px var(--green-medium);
+  box-shadow: 2px 3px 3px 1px var(--green-medium);
+}
+
+.container form div {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8em 0;
+}
+
+.container form h2 {
+  text-align: center;
+  color: var(--blue-dark);
+  border-bottom: 1px solid var(--gray-line);
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.container form h2.register {
+  color: var(--green-medium);
+}
+.container form div label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--title);
+  margin-bottom: 0.3em;
+}
+
+.container form div input {
+  height: 2em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--gray-line);
+  outline: none;
+}
+
+.container form > div:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.container form > div:last-child button {
+  height: 2rem;
+  background: var(--blue-dark);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 5px;
+
+  color: var(--white);
+
+  font-size: 1rem;
+  font-weight: 600;
+  transition: filter 0.2s;
+}
+
+.container form > div:last-child button.register {
+  background: var(--green-medium);
+}
+
+.container form > div:last-child button:hover {
+  filter: brightness(0.9);
+}
